@@ -1,5 +1,8 @@
 $(call inherit-product, device/samsung/quincyatt/full_quincyatt.mk)
 
+# Inherit some common CM stuff.
+$(call inherit-product, vendor/cm/config/gsm.mk)
+
 # Enhanced NFC
 $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 
@@ -10,3 +13,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SGH-I717 TARGET_DEVICE=SGH-I717 BUI
 
 PRODUCT_NAME := cm_quincyatt
 PRODUCT_DEVICE := quincyatt
+
